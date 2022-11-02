@@ -65,8 +65,8 @@ hamburgerBtn.addEventListener('click', () => {
 	navMenu.classList.toggle('hamburger-show');
 });
 
+const navLi = document.querySelector('.dropdown-hover');
 if (window.innerWidth < 1024) {
-	const navLi = document.querySelector('.dropdown-hover');
 	navLi.classList.add('dropdown-left');
 } else {
 	navLi.classList.remove('dropdown-left');
