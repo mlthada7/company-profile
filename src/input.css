@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+	}
+}
+
+.navbar-fixed {
+	@apply fixed bg-slate-100 bg-opacity-80 shadow-md backdrop-blur-lg;
+}
+
+.navlink-onscroll {
+	@apply text-slate-300 group-hover:text-white lg:text-slate-600 lg:group-hover:text-slate-900;
+}
+
+.hamburger-onscroll {
+	@apply my-2 block h-[3px] w-[32px] bg-slate-800;
+}
+
+.hamburger-line {
+	@apply my-2 block h-[3px] w-[32px] bg-slate-600 sm:bg-slate-100;
+}
+
+.hamburger-active > span:nth-child(1) {
+	@apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+	@apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+	@apply -rotate-45;
+}
+
+.hamburger-show {
+	@apply -translate-x-[16rem] sm:-translate-x-[24rem];
+	@apply transition duration-700 ease-in-out;
+}
+
+@layer components {
+	.border-link {
+		@apply after:block after:h-1 after:w-0 after:bg-primary-red 
+		group-hover:after:w-full group-hover:after:transition-all group-hover:after:duration-500;
+	}
+}
