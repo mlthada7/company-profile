@@ -2724,11 +2724,11 @@ html {
 }
 
 .bg-hero{
-  background-image: url('/dist/img/andy-li-unsplash.jpg');
+  background-image: url('img/andy-li-unsplash.jpg');
 }
 
 .bg-map{
-  background-image: url('/dist/img/indonesia.png');
+  background-image: url('img/indonesia.png');
 }
 
 .bg-cover{
@@ -3440,24 +3440,11 @@ html {
 }
 
 @media (min-width: 1280px){
-  .xl\:max-w-md{
-    max-width: 28rem;
-  }
-
-  .xl\:max-w-lg{
-    max-width: 32rem;
-  }
-
   .xl\:max-w-xl{
     max-width: 36rem;
   }
 
-  .xl\:max-w-2xl{
-    max-width: 42rem;
-  }
-
-  .xl\:bg-red-300{
-    --tw-bg-opacity: 1;
-    background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+  .xl\:max-w-lg{
+    max-width: 32rem;
   }
 }

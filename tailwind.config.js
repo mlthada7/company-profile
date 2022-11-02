@@ -19,8 +19,8 @@ module.exports = {
 				trans: '#00000080',
 			},
 			backgroundImage: {
-				hero: "url('dist/img/andy-li-unsplash.jpg')",
-				map: "url('dist/img/indonesia.png')",
+				hero: "url('img/andy-li-unsplash.jpg')",
+				map: "url('img/indonesia.png')",
 			},
 		},
 	},
