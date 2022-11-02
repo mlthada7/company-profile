@@ -62,6 +62,7 @@ const navMenu = document.querySelector('#nav-menu');
 // Hamburger Toggle
 hamburgerBtn.addEventListener('click', () => {
 	hamburgerBtn.classList.toggle('hamburger-active');
+	// console.log('helo');
 	navMenu.classList.toggle('hamburger-show');
 });
 

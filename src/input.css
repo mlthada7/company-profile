@@ -37,8 +37,8 @@
 }
 
 .hamburger-show {
-	@apply -translate-x-[16rem] sm:-translate-x-[24rem];
-	@apply transition duration-700 ease-in-out;
+	@apply translate-y-[18rem];
+	@apply transition duration-300 ease-in-out;
 }
 
 @layer components {
