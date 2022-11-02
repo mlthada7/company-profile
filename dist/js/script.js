@@ -65,11 +65,12 @@ hamburgerBtn.addEventListener('click', () => {
 	navMenu.classList.toggle('hamburger-show');
 });
 
-const navLi = document.querySelector('.dropdown-hover');
+// const navLi = document.querySelector('.dropdown-hover');
+const aboutDropdown = document.querySelector('#about-dropdown');
 if (window.innerWidth < 1024) {
-	navLi.classList.add('dropdown-left');
+	aboutDropdown.classList.add('hidden');
 } else {
-	navLi.classList.remove('dropdown-left');
+	aboutDropdown.classList.remove('hidden');
 }
 
 // Close Hamburger Menu when click outside
