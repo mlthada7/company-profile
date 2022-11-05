@@ -59,11 +59,21 @@ window.onscroll = function () {
 
 const hamburgerBtn = document.querySelector('#hamburger-btn');
 const navMenu = document.querySelector('#nav-menu');
+const main = document.querySelector('main');
 // Hamburger Toggle
 hamburgerBtn.addEventListener('click', () => {
 	hamburgerBtn.classList.toggle('hamburger-active');
-	// console.log('helo');
 	navMenu.classList.toggle('hamburger-show');
+	main.classList.toggle('dimmer');
+});
+
+// Close Hamburger Menu when click outside
+window.addEventListener('click', function (e) {
+	if (e.target !== hamburgerBtn && e.target !== navMenu) {
+		hamburgerBtn.classList.remove('hamburger-active');
+		navMenu.classList.remove('hamburger-show');
+		main.classList.remove('dimmer');
+	}
 });
 
 // const navLi = document.querySelector('.dropdown-hover');
@@ -73,14 +83,6 @@ if (window.innerWidth < 1024) {
 } else {
 	aboutDropdown.classList.remove('hidden');
 }
-
-// Close Hamburger Menu when click outside
-window.addEventListener('click', function (e) {
-	if (e.target !== hamburgerBtn && e.target !== navMenu) {
-		hamburgerBtn.classList.remove('hamburger-active');
-		navMenu.classList.remove('hamburger-show');
-	}
-});
 
 // function getData() {
 // 	const response = fetch('dist/api/data.json');
