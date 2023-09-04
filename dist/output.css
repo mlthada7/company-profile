@@ -2438,6 +2438,10 @@ html {
   margin-bottom: 0.75rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -2452,10 +2456,6 @@ html {
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -2488,14 +2488,6 @@ html {
 
 .h-5{
   height: 1.25rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-10{
-  height: 2.5rem;
 }
 
 .min-h-screen{
